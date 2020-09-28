@@ -18,8 +18,8 @@
         <div class="container"><a class="navbar-brand" href="index.html"><img src="imagens/logo.png" alt="logo" width="268" height="62"></a>
            
                 <ul class="nav navbar-nav mr-auto justify-content-end">
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link active" data-toggle="dropdown" aria-expanded="false" href="#">Cardápio </a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Sobre</a><a class="dropdown-item" role="presentation" href="sugestoes.html">Sugestões</a>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link active" data-toggle="dropdown" aria-expanded="false" href="#">Sugestões </a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="index.html">Cardápio</a><a class="dropdown-item" role="presentation" href="#">Sobre</a>
                     </li>
                 </ul><span class="navbar-text actions"> <a class="login"  data-toggle="modal" data-target="#modalLogIn" href="#" style="margin: 16px;">Log In</a><a class="btn btn-light action-button" data-toggle="modal" data-target="#modalCadastro" role="button" href="#">Cadastrar</a></span>
         </div>
@@ -132,102 +132,30 @@
 
     </nav>
 
-     <!-- CARDÁPIO -->
+    
     <div class="container mt-3">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
 
                 <!-- COMIDAS -->
-                <div class="card bg-warning text-white card-body">COMIDAS</div>
+                <div class="card bg-warning text-white card-body">FALE COM O DONO</div>
 
                 <!-- ITEM 1 COMIDA -->
                         <div class="container card bg-light mt-1">
-                            <h5 class="mt-1">Cheeseburguer HTML</h5>
-                            <ul>
-                                <li>Pão branco, 180g de carne, queijo especial, molho picante.</li>
-                                <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
-                            </ul></div>
-                <!-- ITEM 2 COMIDA -->
-                        <div class="container card bg-light mt-1">
-                            <h5 class="mt-1">Cheeseburguer PHP</h5>
-                            <ul>
-                                <li>Pão branco, 180g de carne, queijo especial, molho picante.</li>
-                                <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
-                            </ul></div>
-
-                              <!-- ITEM 3 COMIDA -->
-                        <div class="container card bg-light mt-1">
-                            <h5 class="mt-1">Cheeseburguer Javascript</h5>
-                            <ul>
-                                <li>Pão branco, 180g de carne, queijo especial, molho picante.</li>
-                                <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
-                            </ul></div>
-                            
-                            
+                             <form>
+                                <div
+                                    class="form-group"><label for="email">Nome</label><input class="form-control" type="email" id="email" /></div>
+                                <div
+                                    class="form-group"><label for="email">Email</label><input class="form-control" type="email" id="email" /></div>
+                        <div class="form-group"><label for="message">Message</label><textarea class="form-control" id="message"></textarea></div>
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                            <div class="col-md-4 button">
+                                <button type="button" class="btn btn-warning btn-block mt-1 mb-3">Enviar</button>
+                           
+                      
+                        </form>
                         
-                        
-                        <!-- BEBIDAS -->
-                        <div class="card bg-warning text-white mt-2">
-                            <div class="card-body">BEBIDAS</div>
-                        </div>
 
-                         <!-- ITEM 1 BEBIDA -->
-                         <div class="container card bg-light mt-1">
-                            <h5 class="mt-1">Coca-Cola</h5>
-                            <ul>
-                                <li>Lata.</li>
-                                <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
-                            </ul></div>
-
-                              <!-- ITEM 2 BEBIDA -->
-                         <div class="container card bg-light mt-1">
-                            <h5 class="mt-1">Cerveja Skol</h5>
-                            <ul>
-                                <li>Garrafa 600ml.</li>
-                                <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
-                            </ul></div>
-
-                             <!-- ITEM 3 BEBIDA -->
-                         <div class="container card bg-light mt-1">
-                            <h5 class="mt-1">Água Mineral</h5>
-                            <ul>
-                                <li>Garrafa 500ml.</li>
-                                <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
-                            </ul></div>
-                        </div>
-
-                <!-- CARRINHO HEADER -->
-                <div class="col-md-4">
-                    <div class="card bg-dark text-white card-body">SEU PEDIDO
-                        <div class="card-img-overlay"><i class="fas fa-hamburger float-right"style='font-size:24px'></i></div>
-                    </div>
-
-                <!-- CARRINHO ITENS -->
-                <div class="container" style="background-color: #c9bfbf"> 
-                    <div class="row justify-content-center carrinho-vazio">
-                        <p><br><br><br><br>seu carrinho esta vazio  <br><br><br><br><br></p>
-                    </div>
-                </div>
-
-                <!-- CARRINHO TOTAL -->
-                <div class="container" style="background-color: #c9bfbf"> 
-                    <H6 class="mb-0 p-2">TOTAL DO PEDIDO <span class="float-right">R$ 0,00</span></H6>
-                </div>
-
-                 <!-- CARRINHO PAGAMENTO -->
-                 <div class="container bg-light"> 
-                    <div class="row justify-content-center">
-                        <button type="button" class="btn btn-secondary mt-3 mb-3">FAZER PEDIDO</button>
-                    </div>
-                   
-                </div>
-
-
-                        
-                   
-
-</div>
-</div>
-</div>
 </body>
 </html>
