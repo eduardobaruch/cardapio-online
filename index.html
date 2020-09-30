@@ -16,52 +16,55 @@
 </head>
 
 <body background="imagens/hamburgerbg.jpg" style="padding-bottom: 70px;">
-    <!--Botoes de log in-->
+    <!--NAVBAR-->
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-button bg-warning">
+        <!--LOGO-->
         <div class="container"><a class="navbar-brand" href="index.html"><img src="imagens/logo.png" alt="logo"
                     width="268" height="62"></a>
-
+            <!--MENU--> 
             <ul class="nav navbar-nav mr-auto justify-content-end">
-                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link active" data-toggle="dropdown"
-                        aria-expanded="false" href="#">Cardápio </a>
-                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
-                            href="sobre.html">Sobre</a><a class="dropdown-item" role="presentation"
-                            href="sugestoes.html">Sugestões</a>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link active" data-toggle="dropdown" aria-expanded="false" href="#">Cardápio </a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" href="sobre.html">Sobre</a>
+                        <a class="dropdown-item" role="presentation" href="sugestoes.html">Sugestões</a>
                 </li>
-            </ul><span class="navbar-text actions"> <a class="login" data-toggle="modal" data-target="#modalLogin"
+            </ul>
+            <!--BOTÕES LOGIN E CADASTRAR-->
+            <span class="navbar-text actions"> <a class="login" data-toggle="modal" data-target="#modalLogin"
                     href="#" style="margin: 16px;">Login</a><a class="btn btn-light action-button" data-toggle="modal"
                     data-target="#modalCadastro" role="button" href="#">Cadastrar</a></span>
         </div>
-        <!--Botoes de log in-->
-        <!-- The Modal -->
+        <!--MODAL DE LOGIN-->
         <div class="modal" id="modalLogin">
             <div class="modal-dialog">
                 <div class="modal-content">
 
-                    <!-- Modal Header -->
+                    <!-- MODAL HEADER -->
                     <div class="modal-header">
                         <h4 class="modal-title">Informações de Login</h4>
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
 
-                    <!-- Modal body -->
+                    <!-- MODAL BODY -->
                     <div class="modal-body">
                         <form>
-                            <label class="sr-only" for="usrname">Username</label>
+                            <!-- CPF -->
+                            <label class="sr-only" for="cpf">cpf</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i
-                                            class="fa fa-hashtag"></i></span>
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-hashtag"></i></span>
                                 </div>
                                 <input type="text" class="form-control" placeholder="CPF" aria-label="Username"
                                     aria-describedby="basic-addon1">
                             </div>
-
-
-                            <label class="sr-only" for="Password">Name</label>
+                            <!-- SENHA -->
+                            <label class="sr-only" for="Password">senha</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <i class="fa fa-key"></i></span>
                                 </div>
                                 <input id="Password" type="password" class="form-control" placeholder="Senha"
                                     aria-label="Password" aria-describedby="basic-addon2">
@@ -69,7 +72,7 @@
                         </form>
                     </div>
 
-                    <!-- Modal footer -->
+                    <!-- MODAL FOOTER -->
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Entrar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
@@ -79,19 +82,18 @@
             </div>
         </div>
 
-        <!--Botoes de CADASTRO-->
-        <!-- Modal -->
+        <!-- MODAL DE CADASTRO -->
         <div class="modal" id="modalCadastro">
             <div class="modal-dialog">
                 <div class="modal-content">
 
-                    <!-- Modal Header -->
+                    <!-- MODAL HEADER -->
                     <div class="modal-header">
                         <h4 class="modal-title">Informações de Cadastro</h4>
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
 
-                    <!-- Modal body -->
+                    <!-- MODAL BODY -->
                     <div class="modal-body">
                         <form>
                             <label class="sr-only" for="usrname">Username</label>
@@ -122,10 +124,6 @@
                                 <input type="text" class="form-control" placeholder="Email" aria-label="Username"
                                     aria-describedby="basic-addon1">
                             </div>
-
-
-
-
                             <label class="sr-only" for="Password">Name</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
@@ -137,7 +135,7 @@
                         </form>
                     </div>
 
-                    <!-- Modal footer -->
+                    <!-- MODAL FOOTER -->
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Cadastrar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
