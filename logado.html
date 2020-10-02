@@ -13,23 +13,6 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>EVA Lanches</title>
     <link rel="icon" href="imagens/icon.png">
-
-    <script>
-        function validarLogin() {
-            
-            var s1 = document.forms["formLogin"]["cpf"].value;
-          var s2 = document.forms["formLogin"]["password"].value;
-          
-             if (s1 === '012345678901' && s2 === 'estoucomfome') {
-                return true;
-            }
-            else {
-                alert ("Cpf ou senha incorretos");
-                return false;
-            }
-      }
-        
-    </script>
 </head>
 
 <body background="imagens/hamburgerbg.jpg" style="padding-bottom: 70px;">
@@ -62,22 +45,20 @@
                         <h4 class="modal-title">Informações de Login</h4>
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
-                    
-                    <!-- FUNÇÃO validarLogin(); -->
-                
+
                     <!-- MODAL BODY -->
                     <div class="modal-body">
-                        <form action="logado.html" name="formLogin" method="POST" onsubmit="return validarLogin();">
+                        <form>
                             <!-- CPF -->
-                            <div class="form-group">
                             <label class="sr-only" for="cpf">cpf</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">
                                         <i class="fa fa-hashtag"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="CPF" name="cpf" id="cpf">
-                            </div></div>
+                                <input type="text" class="form-control" placeholder="CPF" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
                             <!-- SENHA -->
                             <label class="sr-only" for="Password">senha</label>
                             <div class="input-group mb-2">
@@ -85,18 +66,18 @@
                                     <span class="input-group-text" id="basic-addon2">
                                         <i class="fa fa-key"></i></span>
                                 </div>
-                                <input id="password" type="password" class="form-control" placeholder="Senha" name="password">
+                                <input id="Password" type="password" class="form-control" placeholder="Senha"
+                                    aria-label="Password" aria-describedby="basic-addon2">
                             </div>
-                        
-                    
+                        </form>
+                    </div>
 
                     <!-- MODAL FOOTER -->
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Entrar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                     </div>
-                </form>
-            </div>
+
                 </div>
             </div>
         </div>
@@ -186,7 +167,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 my-auto">
-                            <button onclick="alert('Você precisa fazer o login para realizar um pedido.')"  class="btn btn-warning float-right">Eu Quero!</button>
+                            <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
                         </div>
                     </div>
                 </div>
@@ -202,7 +183,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 my-auto">
-                            <button onclick="alert('Você precisa fazer o login para realizar um pedido.')" type="button" class="btn btn-warning float-right">Eu Quero!</button>
+                            <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
                         </div>
                     </div>
                 </div>
@@ -218,7 +199,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 my-auto">
-                            <button onclick="alert('Você precisa fazer o login para realizar um pedido.')" type="button" class="btn btn-warning float-right">Eu Quero!</button>
+                            <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
                         </div>
                     </div>
                 </div>
@@ -242,7 +223,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 my-auto">
-                            <button onclick="alert('Você precisa fazer o login para realizar um pedido.')" type="button" class="btn btn-warning float-right">Eu Quero!</button>
+                            <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
                         </div>
                     </div>
                 </div>
@@ -258,7 +239,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 my-auto">
-                            <button onclick="alert('Você precisa fazer o login para realizar um pedido.')" type="button" class="btn btn-warning float-right">Eu Quero!</button>
+                            <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
                         </div>
                     </div>
                 </div>
@@ -274,7 +255,7 @@
                             </ul>
                         </div>
                         <div class="col-md-3 my-auto">
-                            <button onclick="alert('Você precisa fazer o login para realizar um pedido.')" type="button" class="btn btn-warning float-right">Eu Quero!</button>
+                            <button type="button" class="btn btn-warning float-right">Eu Quero!</button>
                         </div>
                     </div>
                 </div>
