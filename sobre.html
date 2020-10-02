@@ -13,6 +13,23 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>EVA Lanches</title>
     <link rel="icon" href="imagens/icon.png">
+
+    <script>
+        function validarLogin() {
+            
+            var s1 = document.forms["formLogin"]["cpf"].value;
+          var s2 = document.forms["formLogin"]["password"].value;
+          
+             if (s1 === '123' && s2 === 'anamaria') {
+                return true;
+            }
+            else {
+                alert ("Cpf ou senha incorretos");
+                return false;
+            }
+      }
+        
+    </script>
 </head>
 
 <body background="imagens/hamburgerbg.jpg" style="padding-bottom: 70px;">
@@ -44,30 +61,28 @@
                         <button type="button" class="close" data-dismiss="modal">×</button>
                     </div>
 
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <form>
-                            <label class="sr-only" for="usrname">Username</label>
+                     <!-- MODAL BODY -->
+                     <div class="modal-body">
+                        <form action="sobrelogado.html" name="formLogin" onsubmit="return validarLogin();">
+                            <!-- CPF -->
+                            <div class="form-group">
+                            <label class="sr-only" for="cpf">cpf</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i
-                                            class="fa fa-hashtag"></i></span>
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-hashtag"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="CPF" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-
-
-                            <label class="sr-only" for="Password">Name</label>
+                                <input type="text" class="form-control" placeholder="CPF" name="cpf" id="cpf">
+                            </div></div>
+                            <!-- SENHA -->
+                            <label class="sr-only" for="Password">senha</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <i class="fa fa-key"></i></span>
                                 </div>
-                                <input id="Password" type="password" class="form-control" placeholder="Senha"
-                                    aria-label="Password" aria-describedby="basic-addon2">
+                                <input id="password" type="password" class="form-control" placeholder="Senha" name="password">
                             </div>
-                        </form>
-                    </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
